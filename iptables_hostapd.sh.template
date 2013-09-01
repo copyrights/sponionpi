@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo iptables -t nat -A POSTROUTING -o ${BLACKIF} -j MASQUERADE;
+sudo iptables -A FORWARD -i ${BLACKIF} -o ${REDIF} -m state --state RELATED,ESTABLISHED -j ACCEPT;
+sudo iptables -A FORWARD -i ${REDIF} -o ${BLACKIF} -j ACCEPT;
+sudo sh -c \"iptables-save > /etc/iptables.ipv4.nat\";\n
+

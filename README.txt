@@ -17,6 +17,18 @@ BUGS MELDEN
 --------------------
 Sollten Sie einen Fehler in der Software melden wollen, koennen Sie dies unter peter_gotzner@spiegel.de tun.
 
+--------------------------
+NETZWERK KARTEN AUSWAEHLEN
+--------------------------
+
+Vor der Installation kann man noch die einstellen welche Netzwerkkarten genutzt werden sollen.
+Moechten Sie z.B. eth0 (Raspberry Pi Netzwerkkart) als Internet Zugangspunkt nutzen und wlan0 (erster WLAN-USB-Stick) 
+fuer den Tor-Zugang nutzen, gehen Sie bitte in ihren Download-Order/SPONionPi-Order und fuehren in der shell den Befehl:
+
+    sh setinterfaces.sh eth0 wlan0
+
+Im Anschluss fahren sie mit dem Abschnitt "INSTALLATION UND STANDARDPASSWOERTER" fort.
+
 -------------------------------------
 INSTALLATION UND STANDARDPASSWOERTER
 -------------------------------------
@@ -30,12 +42,12 @@ Nach erfolgreicher Installation, dem Einstecken von zwei WLAN-USB-Sticks und ein
 
 Sollte der Browser Sie nach Login-Daten fragen, so entsprecgeb die stets dem WLAN-Namen und dem gesetzten WLAN-Passwort.
 Diese sind daher anfangs "SPONionPi-Tor" und "spiegelonline".
-Bitte beachten Sie die Groß-und Kleinschreibung!
+Bitte beachten Sie die Gross-und Kleinschreibung!
 
 ---------------------
 KONFIGURATION
 ----------------------
-Die URL des SPONionPi ueber die Sie ihn mit dem Browser konfigurieren können, ist in seinem eigenen WLAN immer:
+Die URL des SPONionPi ueber die Sie ihn mit dem Browser konfigurieren koennen, ist in seinem eigenen WLAN immer:
 	
 	sponionpi.local
 
@@ -58,7 +70,7 @@ LIZENZ UND HAFTUNG
 
 Bitte beachten Sie, dass es sich bei der Bastelanleitung und Software von SPIEGEL ONLINE um einen redaktionellen Service handelt.
 Das Netzwelt-Ressort von SPIEGEL ONLINE hat den SPONionPi zwar selbst ausfuehrlich getestet und die Anleitung nach bestem Wissen erstellt,
-uebernimmt aber keinerlei Gewaehr für die Anleitung und das Endprodukt. Der Nachbau erfolgt auf eigenes Risiko, SPIEGEL ONLINE uebernimmt insofern keine Haftung.
+uebernimmt aber keinerlei Gewaehr fuer die Anleitung und das Endprodukt. Der Nachbau erfolgt auf eigenes Risiko, SPIEGEL ONLINE uebernimmt insofern keine Haftung.
 
 Die Software des SPONionPi-Projekts steht unter der GPLv3, die sie in der beigefuegten Datei GPLv3.txt einsehen koennen.
 

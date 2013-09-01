@@ -175,6 +175,7 @@ sudo chmod 550 /var/www/index.php;
 #skript iptables fuer hostapd und tor etc kopieren in /var/www
 echo "$(date +%s):">>install.log;
 sudo cp *.sh /var/www/;
+sudo rm /var/www/setinterfaces.sh
 sudo chmod 750 *.sh
 sudo chown -R www-data /var/www/;
 
